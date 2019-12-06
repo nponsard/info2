@@ -1,0 +1,39 @@
+body{
+  background-color: rgb(228, 61, 61);
+  text-align: center;
+  
+}
+.enigme1{ 
+  display: block;   
+  background-color: white;
+  border-radius: 15px;
+  
+}
+.coordonnee{
+  display : inline-block;
+  border : solid black 1px ;
+  width : auto;
+  padding :5px;
+  margin-left: 17%;
+  background-color: lightgray;
+}
+
+#timer{
+  position: fixed;
+  margin: 5px;
+}
+
+.Gps{
+  position : relative;
+  right : 13%;
+  top : 50px;
+}
+
+img {
+  margin-top: -4px;
+}
+
+.enigme2{
+  display: block;  
+  margin-top: 100px;
+}

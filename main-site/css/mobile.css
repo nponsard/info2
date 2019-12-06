@@ -1,0 +1,55 @@
+.dropdown {
+    display: none;
+}
+.nav-mobile{
+    display: none;
+    background: #333333;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+}
+.nav-mobile p {
+    color: whitesmoke;
+    margin: 0;
+    padding-top: 2vh ;
+    padding-bottom: 2vh;
+}
+.nav-mobile .nav-lien{
+    margin: 0;
+}
+.nav-pc {
+    display: none ;
+  }
+.bouton{
+      margin: 0;
+      width: 100%;
+}
+.lama{
+      margin-right: auto;
+      margin-left: auto;
+      
+  }
+section{
+      display: flex;
+      flex-flow: column;
+  }
+section p {
+      width: 100%;
+  }
+.nav-mobile {
+      display: block;
+      color: whitesmoke;
+  }
+.pc {
+      display: none;
+  }
+.p-projet{
+    flex-flow: column;
+}
+h2 {
+      margin-bottom: 15px;
+}
+.part{
+    flex-flow: column;
+}

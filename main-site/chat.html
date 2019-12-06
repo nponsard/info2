@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/logo.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Student helper</title>
+</head>
+
+<body>
+    <header>
+       
+        <div class="nav-pc">
+
+            <ul class="nav">
+                <li class=""> <a href="index.html" class="nav-lien ">Acceuil</a></li>
+                <li class=""><a class="nav-lien active" href="chat.html">Chat</a></li>
+                <li class=""><a class="nav-lien" href="../escape">escape game</a></li>
+            </ul>
+        </div>
+    </nav>
+	<div class="section" id="page-selection">
+		<div>
+
+			<div>
+				<input type="radio" id="cherche" name="mode" value="cherche"
+         checked>
+        <label for="cherche">Je cherche de l'aide d'autres étudiants</label>
+      </div>
+      <div>
+        <input type="radio" id="aide" name="mode" value="aide">
+        <label class="radio" for="aide">Je veux aider d'autres étudiants</label>
+      </div>
+      <div>
+      <label for="lieu">Localisation : </label>
+      <select name="lieu" id="lieu">
+        <option value="AMU">Aix-Marseille</option>
+        <option value="Avignon">Avignon</option>
+        <option value="Nice">Nice</option>
+        <option value="Toulon">Toulon</option>
+        <option value="Grenoble">Grenoble</option>
+      </select>
+      </div> 
+      <div>
+      <label for="motif">Pour :  </label>
+
+      <select name="motif" id="motif">
+        <option value="logement">Se loger</option>
+        <option value="bourse">Obtenir la bourse</option>
+        <option value="travail">Trouver du travail</option>
+        <option value="manger">Se faire à manger / Où manger</option>
+        <option value="amis">Faire des rencontres</option>
+      </select>
+      </div>
+      <div class="div_valid_droite">
+        <input class="valid droite" type="submit" value="Valider" id="valid-selection">
+      </div>
+
+
+
+    </div>
+
+
+	</div>
+
+	<div class="section" id="page-pseudo">
+    <label id="text-pseudo" for="pseudo">Entrez votre pseudo : </label>
+    <input type="text" id="pseudo">
+    <input class="valid" type="submit" value="valider" id="valid-pseudo">
+	</div>
+  
+	<div class="section" id="page-chat">
+      <p style="float:right;"><span id="nb"></span> connectés</p>
+      <h1 id="titre"></h1>
+    <ul id="sandbox">
+
+    </ul>
+	<textarea class="textarea" id="textarea" placeholder="Entrer pour envoyer votre message..."></textarea>
+  </div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="chat.js"></script>
+
+  <script type="text/javascript" src="Rickroll.js"></script>
+  
+</body>
+</html>

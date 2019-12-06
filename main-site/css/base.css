@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+.centre{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.gauche {
+    float: left;
+}
+.droite {
+    float:right;
+}
+a{
+    color:black;
+}
+#contenu {
+    transition: 1s;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 89vh;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-bottom: 0;
+}
+
+footer{
+    width: 100%;
+}
+footer p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+.lama{
+    filter: grayscale(100%);
+    transition: 1s;
+    max-width:200px ;
+    float: left;
+    border-radius: 50%;
+}
+.lama:hover {
+    filter: grayscale(0%);
+    transform: rotate(180deg);
+}
+.projet-nom{   
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+.liste-projets {
+    list-style-type:"";
+    display: block;
+}
+.p-projet {
+    display: flex;
+    flex-flow: row ;
+    width: 100%;
+
+}
+.p-projet p{
+    margin: 0;
+    padding: 0;
+}
+.p-nom{
+    flex: 2;
+    margin: 0;
+}
+.anim-red{
+    display:inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    animation: red-anim 2s infinite;
+}
+.part{
+    display: flex;
+    flex-flow: row;
+}
+@keyframes red-anim{
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: transparent;
+    }
+    100%{background-color: red;}
+}

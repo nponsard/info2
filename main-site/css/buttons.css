@@ -1,0 +1,22 @@
+.bouton{
+    text-decoration: none;    
+    padding: 1em;
+    margin: 1em 1em 1em 0;
+    border-radius: 2px;
+    transition: 0.5s;
+    text-align: center;
+}
+.back-top{
+    position: fixed;
+    right: 0;
+    transition:  1s;
+    bottom: 0;
+    margin: 0 ;
+    padding: 1em;
+    text-decoration: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+
+}
+.back-top:hover{
+    border-radius: 4px;
+}

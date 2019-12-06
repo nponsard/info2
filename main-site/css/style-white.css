@@ -1,0 +1,39 @@
+body{
+    background-color: whitesmoke;
+}
+#content {
+    color: #111111;
+    background-color: whitesmoke ;
+}
+
+* {
+   
+    color: #111111;
+}
+a{
+    color: #111111;
+}
+.bouton{
+    color: whitesmoke;
+    background-color: #111111;
+}
+.bouton:hover {
+    background-color: whitesmoke;
+    color: #111111;
+}
+
+.form-input,.form-textarea {
+    color: #111111;
+    background-color: whitesmoke;
+    border: 2px solid #aaa;
+}
+.form-button:hover  {
+    color: #111111;
+    background-color: #aaa;
+}
+.back-top{
+    background-color: #aaa;
+}
+.back-top:hover{
+    border: 2px solid #111111;
+}

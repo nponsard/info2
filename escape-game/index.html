@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>escape</title>
+</head>
+
+<body>
+	<div id="game">
+			<h2 id="timer"></h2>
+
+		
+
+		<div class="enigme1" id="1">
+			<h1>Escape Game</h1>
+			<p>Vous êtes en route pour passer un entretien d'embauche à Divalto, malheureusement toutes les indications pour y aller
+				ont été codées, à vous de les décoder avant la fin du temps imparti pour arriver à votre entretien à temps.</p>
+			<p> Entrez les bonnes coordonnées GPS</p>
+			<p class="coordonnee"> 2B.7DA64,5.6E207</p>
+
+
+			<input type="text" class="Gps" id="gps">
+      <input type="button" class="Gps" id="btnGps" value="Itinéraire" onclick="e1()"></button>
+    </div>
+
+    <div>
+			<h3 class="erreur" id="erreurE1" style="display:none;">Si tu n'entres pas les bonnes coordonnées, tu n'arriveras jamais
+				à ton entretien...</h3>
+			<h3 class="erreur" id="erreurE2" style="display:none;">C'est pas le moment de faire des détours, tu sais...</h3>
+			<h3 class="erreur" id="erreurE3" style="display:none;">Vas-y fais tes détours, c'est pas moi qui perds du temps...</h3>
+			<h3 class="erreur" id="erreurE4" style="display:none;">Non mais, si tu veux pas y aller, je te force pas, c'est pas mon
+				problème...
+			</h3>
+			<h3 class="erreur" id="erreurE5" style="display:none;">Tu sais pas ouvrir une porte et tu veux te faire recruter... ça
+				en devient presque mignon...</h3>
+		</div>
+    
+    <div class="enigme2" id="2" style="display:none;">
+      <p>Oups ! Visiblement on ne vous a pas donné les bonnes coordonnées. Maintenant que vous êtes ici repérez-vous à l'aide des panneaux, Cliquez sur le panneau qui indique "Divalto"</p>
+      <img src="img/chiffres1.png" onclick="e2false()"/>
+      <img src="img/chiffres2.png" onclick="e2false()"/>
+      <img src="img/chiffres3.png" onclick="e2true()"/>
+      <img src="img/chiffres4.png" onclick="e2false()"/>
+    </div>
+
+    <div id="3" style="display:none;">
+    <p>Cliquez sur le panneau qui indique "Divalto"</p>
+    <img src="img/cesar1.png" onclick="e3false()">
+    <img src="img/cesar2.png" onclick="e3false()">
+    <img src="img/cesar3.png" onclick="e3true()">
+    <img src="img/cesar4.png" onclick="e3false()">
+    </div>
+
+    <div id="4" style="display:none;">
+      <p>Cliquez sur le panneau qui indique "Divalto"</p>
+      <img src="img/altbash1.png" onclick="e4false()">
+      <img src="img/altbash2.png" onclick="e4false()">
+      <img src="img/altbash3.png" onclick="e4false()">
+      <img src="img/altbash4.png" onclick="e4true()">
+    </div>
+    
+    <div id="5" style="display:none;">
+      <p>Bien joué vous avez réussi à arriver jusqu'à l'immeuble. Maintenant il va falloir trouver le bon code pour déverrouiller la porte !</p>
+      <img src="img/tableau.png"></br>
+      <img src="img/symboles_bizarres.png">
+      <input type="text" id="deverrou">
+      <input type="button" id="btnDeverrou" value="Valider" onclick="e5()"></button>
+    </div>
+
+    <div id="fin" style="display:none;">
+      <p>Félicitations ! vous êtes arrivé à votre entretient à temps et qui plus est vous avez décroché le poste !</p>
+      <img src="https://media.giphy.com/media/U6pavBhRsbNbPzrwWg/giphy.gif">
+    </div>
+
+  </div>
+  
+  <div id="perdu" style="display:none">
+    <p>Tu as échoué... je m'en doutais que tu n'en serais pas capable...</p>
+    <img src="https://www.groupe-bizness.com/v4/wp-content/uploads/2017/07/perdu-le-chemin-12165.jpg" width="100%" height="100%">
+  </div>
+
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

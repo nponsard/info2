@@ -1,0 +1,45 @@
+.img-acceuil {
+    top:50%;
+    margin-left: 4px ;
+    margin-right: 3px ;
+    margin-top: 4px;
+    padding: 0;
+    filter: grayscale(100%);
+    transition: 0s;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+.img-acceuil:hover {
+    filter: grayscale(0%);
+    transform: rotate(0deg);
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    flex-flow: row;
+}
+.nav-lien {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 2px;
+}
+.nav-lien:hover {
+    background-color: whitesmoke;
+    color: #111;
+}
+.active {
+    background-color: #DDD;
+    color: #111;
+}
+.nav-mobile{
+    display: none;
+}
